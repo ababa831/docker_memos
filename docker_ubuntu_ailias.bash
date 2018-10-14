@@ -1,5 +1,5 @@
 # `k_docker ${コンテナ名}`で指定先コンテナイメージの作業環境を開くシェルスクリプト　（Ubuntu用）
-## コマンドラインオプション周りとかちゃんと書いていない
+## オプション解析周りとかちゃんと書いていない
 k_docker()
 {
 	sudo docker run --rm -it $1
@@ -17,7 +17,7 @@ k_jupyter()
 }
 
 # nvidia-docker2を利用して，gpu環境を開く場合
-## tensorflow/tensorflow:latest-gpu-py3 nvidia-docker2 environments
+## tensorflow/tensorflow:latest-gpu-py3 nvidia-docker2 environment
 ## Requirements: nvidia-docker2
 tf_docker()
 {
