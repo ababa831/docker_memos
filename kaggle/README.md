@@ -17,5 +17,5 @@ $ k_docker ababa831/kaggle-custom:latest
 - Jupyter notebookサーバを起動する
 
 ```
-$ k_docker ababa831/kaggle-custom:latest
+$ k_jupyter ababa831/kaggle-custom:latest
 ```
