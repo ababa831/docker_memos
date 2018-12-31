@@ -2,7 +2,7 @@
 ## オプション解析周りとかちゃんと書いていない
 k_docker()
 {
-	sudo docker run --rm -it $1
+	sudo docker run --rm -it $@
 }
 
 k_python()
