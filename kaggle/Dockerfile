@@ -6,17 +6,18 @@ MAINTAINER ababa831 <flvonlineconverter@gmail.com>
 RUN apt-get install -y locales
 
 # 日本語周りの設定
-RUN locale-gen ja_JP.UTF-8  
-ENV LANG ja_JP.UTF-8  
-ENV LANGUAGE ja_JP:ja  
-ENV LC_ALL ja_JP.UTF-8 
+# RUN locale-gen ja_JP.UTF-8  
+# ENV LANG ja_JP.UTF-8  
+# ENV LANGUAGE ja_JP:ja  
+# ENV LC_ALL ja_JP.UTF-8 
 
 # 追加モジュール
 # pip で入るもの
 RUN pip install wikipedia2vec \
     plotly \
     catboost \
-    --pre xgboost
+    --pre xgboost \
+    optuna
 
 # git clone経由するもの
 # LightGBM
