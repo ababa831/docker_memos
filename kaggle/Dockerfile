@@ -6,6 +6,7 @@ MAINTAINER ababa831 <flvonlineconverter@gmail.com>
 RUN apt-get install -y locales
 
 # 日本語周りの設定
+# 何かしら設定ミスっていて正しく適用できていないので，とりあえずコメントアウト
 # RUN locale-gen ja_JP.UTF-8  
 # ENV LANG ja_JP.UTF-8  
 # ENV LANGUAGE ja_JP:ja  
